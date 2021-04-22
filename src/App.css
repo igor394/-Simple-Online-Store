@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+#root{
+    height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    height: 100%;
+    margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+ background: url('https://m.re-store.ru/promo/re-store-15years/images/shop-bg.jpg') no-repeat;
+    background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
+  height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#front-btn{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

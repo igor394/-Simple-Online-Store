@@ -1,0 +1,34 @@
+[
+  {
+    "name":"LG Tv 42 inch",
+    "price":"21,999",
+    "real_price":"25,999",
+    "img":"http://www.lg.com/us/images/tvs/md05802269/gallery/medium01.jpg",
+    "text":"Some quick example text to build on the card  of the card's content.",
+    "allText":"Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content."
+  },
+  {
+    "name":"Sony Tv 40 inch",
+    "price":"20,999",
+    "real_price":"24,999",
+    "img":"http://www.lg.com/us/images/tvs/md05802269/gallery/medium01.jpg",
+    "text":"Some quick example text to build on the card  of the card's content.",
+    "allText":"Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content."
+  },
+  {
+    "name":"Panasonic Tv",
+    "price":"19,999",
+    "real_price":"22,999",
+    "img":"https://images-na.ssl-images-amazon.com/images/I/61Ekm1BJYbL._SX355_.jpg",
+    "text":"Some quick example text to build on the card  of the card's content.",
+    "allText":"Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content."
+  },
+  {
+    "name":"Toshiba Tv",
+    "price":"32,999",
+    "real_price":"36,999",
+    "img":"http://www.1a20.com/wp-content/uploads/2012/11/4758734_S1E2.png",
+    "text":"Some quick example text to build on the card  of the card's content.",
+    "allText":"Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content."
+  }
+  ]
