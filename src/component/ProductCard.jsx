@@ -17,9 +17,7 @@ const ProductCard = () => {
 
     const handleCart = e =>{
         dispatch(addition(e.target.id))
-    //    propuct popup message
     }
-
 
     return (
         <div className='d-flex justify-content-center' style={{ padding: '40px' }}>
@@ -32,7 +30,6 @@ const ProductCard = () => {
                         <Card.Text>Real price: {card.real_price}</Card.Text>
                         <Card.Text>{card.allText}</Card.Text>
                         <div className='d-flex justify-content-between'>
-
                                 <OverlayTrigger
                                     trigger="click"
                                     key='top'
@@ -47,15 +44,12 @@ const ProductCard = () => {
                                 >
                                     <Button variant="light" id={card.id} onClick={handleCart}>Add to cart</Button>
                                 </OverlayTrigger>
-
-                            {/*<Button variant="light" id={card.id} onClick={handleCart}>Add to cart</Button>*/}
                             <NavLink to="/cart"><Button variant="light" >Go to cart</Button> </NavLink>
                             <NavLink to="/list"><Button variant="light" >Go to list</Button></NavLink>
                         </div>
                     </Card.Body>
                 </Card>
             </div>
-
         </div>
     );
 };

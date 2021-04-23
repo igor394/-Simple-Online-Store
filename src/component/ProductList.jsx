@@ -12,8 +12,6 @@ const ProductList = () => {
         dispatch(showCard(products.find(i=> i['id']===e.target.id)))
     }
 
-
-
     return (
         <div className='d-flex justify-content-start flex-wrap' style={{ padding: '20px' }}>
             {products.map((item) =>

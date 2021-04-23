@@ -8,7 +8,6 @@ const Footer = () => {
                     <div className="col-sm-2 col-1"></div>
                     <div className="col-sm-4 col-5">
                         <h6>Svidunovych Ihor</h6>
-
                     </div>
                     <div className="col-sm-4 col-5">
                         for 2021
@@ -19,5 +18,4 @@ const Footer = () => {
         </footer>
     );
 };
-
 export default Footer;
