@@ -13,20 +13,23 @@ import Footer from './component/Footer';
 
 function App() {
     return (
-        <div className='main' >
-            <Router>
-                <Header/>
-                <div className='container' >
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/list' component={ProductList} />
-                        <Route path='/card' component={ProductCard} />
-                        <Route path='/cart' component={UserCart} />
-                    </Switch>
-                </div>
-            </Router>
-            <Footer/>
-        </div>
+        <>
+            <div className='main' >
+                <Router>
+                    <Header />
+                    <div className='container' >
+                        <Switch>
+                            <Route exact path='/' component={Home} />
+                            <Route path='/list' component={ProductList} />
+                            <Route path='/card' component={ProductCard} />
+                            <Route path='/cart' component={UserCart} />
+                        </Switch>
+                    </div>
+                </Router>
+            </div>
+            <Footer />
+        </>
+
     );
 }
 

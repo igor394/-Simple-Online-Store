@@ -1,12 +1,21 @@
-import {createSlice} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import db from '../../db/db.json';
 
-export const goodsSlice = createSlice({
+export const productSlice = createSlice({
     name: 'product',
     initialState: {
-        product: db
+        list: db,
+        card: {},
+    },
+    reducers: {
+        showCard: (state, action) => {
+            state.card = action.payload
+        },
+        removeCard: (state, data) => {
+            state.card = {}
+        }
     }
 });
 
-export const selectProduct= state => state.product.product;
-export default goodsSlice.reducer;
+export default productSlice.reducer;
+export const { showCard, removeCard } = productSlice.actions;

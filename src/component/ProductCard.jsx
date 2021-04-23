@@ -1,18 +1,57 @@
-import React from 'react';
-import db from "../db/db.json";
-import {Button, Card} from "react-bootstrap";
+import React, {useEffect} from 'react';
+import {Button, Card, Popover,OverlayTrigger} from "react-bootstrap";
+import { useSelector, useDispatch } from 'react-redux';
+import { removeCard } from '../store/reducers/productReducer';
+import { addition } from '../store/reducers/cartReducer';
+import {NavLink} from "react-router-dom";
 
 const ProductCard = () => {
-    const item = db[0]
+    const card = useSelector(state => state.product.card );
+    const dispatch = useDispatch();
+
+    useEffect(()=>{
+        return () => {
+            dispatch(removeCard());
+        };
+    },[])
+
+    const handleCart = e =>{
+        dispatch(addition(e.target.id))
+    //    propuct popup message
+    }
+
+
     return (
-        <div className='d-flex justify-content-center' style={{padding: '18px'}}>
+        <div className='d-flex justify-content-center' style={{ padding: '40px' }}>
             <div>
-                <Card style={{ maxWidth: '38rem'}}>
-                    <Card.Img variant="top" src={item.img} style={{width: '600px'}}/>
+                <Card style={{ maxWidth: '32rem' }}>
+                    <Card.Img variant="top" src={card.img} style={{ width: '400px' }} />
                     <Card.Body>
-                        <Card.Title>{item.name}</Card.Title>
-                        <Card.Text>{item.allText}</Card.Text>
-                        <Button variant="light" href='/cart'></Button>
+                        <Card.Title>{card.name}</Card.Title>
+                        <Card.Text>Price without taxes: {card.price}</Card.Text>
+                        <Card.Text>Real price: {card.real_price}</Card.Text>
+                        <Card.Text>{card.allText}</Card.Text>
+                        <div className='d-flex justify-content-between'>
+
+                                <OverlayTrigger
+                                    trigger="click"
+                                    key='top'
+                                    placement='top'
+                                    overlay={
+                                        <Popover id={`popover-positioned-top`}>
+                                            <Popover.Content>
+                                                You added a product to your cart
+                                            </Popover.Content>
+                                        </Popover>
+                                    }
+                                >
+                                    <Button variant="light" id={card.id} onClick={handleCart}>Add to cart</Button>
+                                </OverlayTrigger>
+
+                            {/*<Button variant="light" id={card.id} onClick={handleCart}>Add to cart</Button>*/}
+                            <NavLink to="/cart"><Button variant="light" >Go to cart</Button> </NavLink>
+                            <NavLink to="/list"><Button variant="light" >Go to list</Button></NavLink>
+                        </div>
                     </Card.Body>
                 </Card>
             </div>

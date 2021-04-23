@@ -1,19 +1,20 @@
 import React from 'react';
 import {Navbar, Nav,Form} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
 
             <Navbar bg="light" variant="light">
                 <div className='container'>
-                <Navbar.Brand href="/">Home</Navbar.Brand>
+
+                    <NavLink to="/"><Navbar.Brand >Home</Navbar.Brand></NavLink>
                 <Nav className="mr-auto">
-                    <Nav.Link href="/list">Our products</Nav.Link>
+                    <NavLink to="/list">Our products</NavLink>
 
                 </Nav>
                 <Form inline>
-
-                    <Nav.Link href="/cart">Cart</Nav.Link>
+                    <NavLink to="/cart">Cart</NavLink>
                 </Form>
                 </div>
             </Navbar>
