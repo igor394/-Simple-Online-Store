@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {Modal, Button, InputGroup, FormControl} from 'react-bootstrap';
+const ADRES = 'Select office of ';
+
 
 const Ordering = (props) => {
     const [total, setTotal] = useState(props.sum);
-    const [number, setNumber] = useState();
+    const [number, setNumber] = useState(null);
     const [checkDeliv, setCheckDeliv] = useState(false)
     const [develi, setDeveli] = useState('');
-    const ADRES = 'Select office of ';
 
     useEffect(() => {
         setNumber(Math.floor(Math.random() * (1000 - 1)) + 1)
