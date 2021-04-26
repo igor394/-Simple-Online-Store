@@ -1,31 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 #root, html, body {
     height: 100%;
 
 }
-.main{
+
+.main {
     background: url('https://m.re-store.ru/promo/re-store-15years/images/shop-bg.jpg') no-repeat;
     background-size: cover;
     min-height: 100%;
     padding-bottom: 60px;
 
 }
+
 .footer {
     height: 60px;
     margin-top: -60px;
-    background:rgba(248,249,250, 0.4)
+    background: rgba(248, 249, 250, 0.4)
 
 }
-#front-btn{
+
+#front-btn {
     padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-cart{
+
+.img-cart {
     width: 40px;
+}
+
+.popup {
+    background-color: grey;
+    border-radius: 10px;
+    height: 40px;
+    width: 160px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -25px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.popup p {
+    padding-top: 10px;
+}
+
+label {
+    margin-left: 10px;
 }
