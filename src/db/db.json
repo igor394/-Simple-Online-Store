@@ -1,6 +1,7 @@
 [
   {
     "id": "0021",
+    "count": "3",
     "name": "LG Tv 42 inch",
     "price": "21.9",
     "real_price": "25.9",
@@ -10,6 +11,7 @@
   },
   {
     "id": "0022",
+    "count": "15",
     "name": "Sony Tv 40 inch",
     "price": "20.9",
     "real_price": "24.9",
@@ -19,6 +21,7 @@
   },
   {
     "id": "0023",
+    "count": "15",
     "name": "Panasonic Tv",
     "price": "19.9",
     "real_price": "22.9",
@@ -28,6 +31,7 @@
   },
   {
     "id": "0024",
+    "count": "5",
     "name": "LG Tv 42 inch",
     "price": "21.9",
     "real_price": "25.9",
@@ -37,6 +41,7 @@
   },
   {
     "id": "0025",
+    "count": "5",
     "name": "Sony Tv 40 inch",
     "price": "20.9",
     "real_price": "24.9",
@@ -46,6 +51,7 @@
   },
   {
     "id": "0026",
+    "count": "5",
     "name": "Panasonic Tv",
     "price": "19.9",
     "real_price": "22.9",
@@ -55,6 +61,7 @@
   },
   {
     "id": "0027",
+    "count": "5",
     "name": "Toshiba Tv",
     "price": "32.9",
     "real_price": "36.9",
@@ -64,6 +71,7 @@
   },
   {
     "id": "0028",
+    "count": "2",
     "name": "Toshiba Tv",
     "price": "32.9",
     "real_price": "38.9",
